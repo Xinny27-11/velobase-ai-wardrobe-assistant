@@ -60,7 +60,7 @@ async function callAIForPacking(
       return generateMockPackingList(items);
     }
 
-    const { text } = await generateText({ model, prompt, maxTokens: 1500 });
+    const { text } = await generateText({ model, prompt, maxOutputTokens: 1500 });
     const jsonMatch = text.match(/\[[\s\S]*\]/);
     if (jsonMatch) {
       return JSON.parse(jsonMatch[0]) as PackingItemSuggestion[];

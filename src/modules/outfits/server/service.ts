@@ -63,7 +63,7 @@ async function callAIForOutfits(
       return generateMockOutfits(items);
     }
 
-    const { text } = await generateText({ model, prompt, maxTokens: 1024 });
+    const { text } = await generateText({ model, prompt, maxOutputTokens: 1024 });
     const jsonMatch = text.match(/\[[\s\S]*\]/);
     if (jsonMatch) {
       return JSON.parse(jsonMatch[0]) as Array<{ name: string; itemNames: string[]; notes: string }>;
