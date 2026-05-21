@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Camera, Sparkles, Luggage, ArrowRight, ShirtIcon, CheckCheck } from "lucide-react";
-import { useLogin } from "@/components/auth/use-login";
+import { useAuthStore } from "@/components/auth/store/auth-store";
 import { useSession } from "next-auth/react";
 
 const DEMO_ITEMS = [
@@ -22,13 +22,13 @@ const DEMO_OUTFIT = {
 
 export default function DemoPage() {
   const { data: session } = useSession();
-  const { openLogin } = useLogin();
+  const { setLoginModalOpen } = useAuthStore();
 
   const handleCta = () => {
     if (session) {
       window.location.href = "/wardrobe";
     } else {
-      openLogin();
+      setLoginModalOpen(true);
     }
   };
 
