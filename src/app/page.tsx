@@ -7,14 +7,14 @@ import { Background } from "@/components/layout/background";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { Features } from "@/components/landing/features";
 import { useTranslations } from "next-intl";
-import { useLogin } from "@/components/auth/use-login";
+import { useAuthStore } from "@/components/auth/store/auth-store";
 import { useSession } from "next-auth/react";
 import { Camera, ArrowRight } from "lucide-react";
 
 export default function HomePage() {
   const t = useTranslations("landing");
   const { data: session } = useSession();
-  const { setLoginModalOpen } = useLogin();
+  const { setLoginModalOpen } = useAuthStore();
 
   const handleCta = () => {
     if (session) {
