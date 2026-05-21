@@ -27,6 +27,9 @@
     "logIn": "Log in",
     "tryFree": "Try Free",
     "dashboard": "Dashboard",
+    "wardrobe": "My Wardrobe",
+    "outfits": "Outfits",
+    "packing": "Packing",
     "settings": "Settings",
     "footerProduct": "Product",
     "footerResources": "Resources",
@@ -43,8 +46,8 @@
     "refundPolicy": "Refund Policy"
   },
   "auth": {
-    "welcomeTitle": "Welcome to AI SaaS",
-    "welcomeSubtitle": "Sign in to start building with AI SaaS",
+    "welcomeTitle": "Welcome to StyleAI",
+    "welcomeSubtitle": "Sign in to manage your smart digital wardrobe",
     "continueWith": "Continue with {provider}",
     "continueWithEmail": "Continue with Email",
     "loginTestAccount": "Login test account",
@@ -123,11 +126,126 @@
   },
   "landing": {
     "hero": {
-      "titleLine1": "Build Your AI App",
-      "titleLine2": "In Record Time",
-      "subtitle": "A production-ready AI SaaS framework with auth, billing, payments, and AI chat built in.",
-      "subtitleAccent": "Focus on your core feature. We handle the rest."
+      "titleLine1": "Your AI-Powered",
+      "titleLine2": "Smart Wardrobe",
+      "subtitle": "Scan your clothes, get AI outfit suggestions, and plan trips effortlessly.",
+      "subtitleAccent": "Style intelligence that knows your wardrobe better than you do.",
+      "cta": "Start for Free",
+      "ctaSecondary": "See How It Works"
+    },
+    "features": {
+      "sectionLabel": "Core Features",
+      "sectionTitle": "Everything your wardrobe needs",
+      "sectionSubtitle": "From scanning your first item to packing for your next trip — all powered by AI.",
+      "scanner": {
+        "title": "Digital Wardrobe Scanner",
+        "description": "Photograph any clothing item and watch it instantly appear in your digital wardrobe with auto-categorization, color tagging, and season labeling."
+      },
+      "outfits": {
+        "title": "Smart Outfit Recommendations",
+        "description": "Get daily AI-curated outfit suggestions based on current trends, weather, occasion, and your personal style — no more decision fatigue."
+      },
+      "tryon": {
+        "title": "AI Virtual Try-On",
+        "description": "Upload your photo and see realistic AI renderings of how clothes look on your body before wearing them."
+      },
+      "packing": {
+        "title": "Intelligent Trip Packing",
+        "description": "Tell us your destination, duration, and activities. Get a smart packing list pulled directly from your wardrobe."
+      }
+    },
+    "stats": {
+      "items": "Wardrobe items tracked",
+      "outfits": "Outfits generated",
+      "users": "Happy users"
+    },
+    "cta": {
+      "title": "Ready to transform your wardrobe?",
+      "subtitle": "Join thousands of fashion-forward people who never struggle with \"what to wear\" again.",
+      "button": "Get Started Free"
     }
+  },
+  "wardrobe": {
+    "title": "My Wardrobe",
+    "addItem": "Add Item",
+    "scanItem": "Scan Item",
+    "empty": "Your wardrobe is empty",
+    "emptyDesc": "Start by scanning or adding your first clothing item.",
+    "filter": {
+      "all": "All",
+      "tops": "Tops",
+      "bottoms": "Bottoms",
+      "dresses": "Dresses",
+      "outerwear": "Outerwear",
+      "shoes": "Shoes",
+      "accessories": "Accessories"
+    },
+    "season": {
+      "all": "All Seasons",
+      "spring": "Spring",
+      "summer": "Summer",
+      "fall": "Fall",
+      "winter": "Winter"
+    },
+    "occasion": {
+      "all": "All Occasions",
+      "casual": "Casual",
+      "work": "Work",
+      "formal": "Formal",
+      "sport": "Sport",
+      "party": "Party"
+    },
+    "item": {
+      "lastWorn": "Last worn {date}",
+      "neverWorn": "Never worn",
+      "needsLaundry": "Needs laundry",
+      "markWorn": "Mark as worn today",
+      "editItem": "Edit item",
+      "deleteItem": "Delete item"
+    },
+    "upload": {
+      "title": "Add Clothing Item",
+      "dragDrop": "Drag & drop your photo here",
+      "or": "or",
+      "browse": "Browse files",
+      "analyzing": "Analyzing your item...",
+      "success": "Item added to wardrobe!",
+      "nameLabel": "Item Name",
+      "categoryLabel": "Category",
+      "colorLabel": "Color",
+      "seasonLabel": "Season",
+      "occasionLabel": "Occasion"
+    }
+  },
+  "outfits": {
+    "title": "Outfit Suggestions",
+    "generate": "Generate Outfits",
+    "generating": "Finding perfect outfits...",
+    "save": "Save Outfit",
+    "saved": "Saved!",
+    "tryOn": "Virtual Try-On",
+    "occasionLabel": "Occasion",
+    "weatherLabel": "Weather",
+    "styleLabel": "Style Preference",
+    "noItems": "Add more items to your wardrobe to get outfit suggestions.",
+    "savedOutfits": "Saved Outfits",
+    "noSaved": "No saved outfits yet."
+  },
+  "packing": {
+    "title": "Trip Packing List",
+    "newTrip": "Plan a Trip",
+    "destination": "Destination",
+    "destinationPlaceholder": "e.g. Paris, France",
+    "duration": "Duration (days)",
+    "activities": "Planned Activities",
+    "activitiesPlaceholder": "e.g. business meetings, sightseeing, beach",
+    "generate": "Generate Packing List",
+    "generating": "Building your packing list...",
+    "packed": "Packed",
+    "unpack": "Unpack",
+    "addItem": "Add item",
+    "myTrips": "My Trips",
+    "noTrips": "No trips planned yet."
   },
   "account": {
     "profile": "Profile",

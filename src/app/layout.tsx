@@ -29,8 +29,8 @@ import { ServiceNoticeBanner } from "@/components/layout/service-notice-banner";
 const CONSENT_COOKIE = "app_cookie_consent";
 
 export const metadata: Metadata = {
-  title: "AI SaaS Framework",
-  description: "Production-ready AI SaaS framework with auth, billing, payments, and AI chat built in.",
+  title: "StyleAI — Your Smart AI Wardrobe",
+  description: "Scan your clothes, get AI outfit suggestions, and plan trips with your digital wardrobe.",
   icons: [
     { rel: "icon", url: "/favicon.svg", type: "image/svg+xml" },
   ],

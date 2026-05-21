@@ -16,6 +16,9 @@ import { repositoryRouter } from "@/server/api/routers/repository";
 import { githubRouter } from "@/server/api/routers/github";
 import { affiliateRouter } from "@/server/api/routers/affiliate";
 import { telegramRouter } from "@/server/telegram/router";
+import { wardrobeRouter } from "@/modules/wardrobe/server/router";
+import { outfitsRouter } from "@/modules/outfits/server/router";
+import { packingRouter } from "@/modules/packing/server/router";
 import { createCallerFactory, createTRPCRouter } from "@/server/api/trpc";
 
 /**
@@ -52,6 +55,11 @@ export const appRouter = createTRPCRouter({
 
   // Telegram module
   telegram: telegramRouter,
+
+  // Wardrobe modules
+  wardrobe: wardrobeRouter,
+  outfits: outfitsRouter,
+  packing: packingRouter,
 });
 
 export type AppRouter = typeof appRouter;
