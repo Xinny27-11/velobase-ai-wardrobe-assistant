@@ -14,13 +14,13 @@ import { Camera, ArrowRight } from "lucide-react";
 export default function HomePage() {
   const t = useTranslations("landing");
   const { data: session } = useSession();
-  const { openLogin } = useLogin();
+  const { setLoginModalOpen } = useLogin();
 
   const handleCta = () => {
     if (session) {
       window.location.href = "/wardrobe";
     } else {
-      openLogin();
+      setLoginModalOpen(true);
     }
   };
 
